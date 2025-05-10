@@ -5,7 +5,7 @@
 
 }
 .h2 {
-    margin: 10% auto 10%;
+    margin: 5% auto 5%;
     text-align: center;
 }
 .img1 {
@@ -17,22 +17,14 @@
 
 }
 .footer {
-    background-color: #60182f;
+    background-color: #DE2D1B;
     right: 0;
     bottom: 0;
     text-align: center;
     width: 99%;
     color: #fafaff;
 }
-@media (max-width: 320px) {
-    .h1 {
-        font-size: 100%;
-    }
-    .h2 {
-        font-size: 90%;
-    }
 
-}
 
 /* @media (max-width: 320px) {
     .h1 {
@@ -41,11 +33,3 @@
 
 
 }
-
-@media (max-width: 320px) {
-    .h1 {
-        size: 200px;
-    }
-
-
-} */
