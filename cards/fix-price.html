@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Карта Fix Price — показать штрих-код на кассе</title>
+    <meta name="description" content="Онлайн-карта Fix Price со встроенным штрих-кодом и удобной кнопкой для показа в полноэкранном режиме.">
+    <meta name="robots" content="index,follow">
+    <link rel="preload" href="../css/style.css" as="style">
+    <link rel="stylesheet" href="../css/style.css">
+  </head>
+  <body>
+    <main class="container">
+      <nav class="top-nav" aria-label="Навигация">
+        <a class="back-link" href="../index.html">← На главную</a>
+        <a class="all-cards-link" href="../index.html">Все карты</a>
+      </nav>
+
+      <h1>Карта Fix Price</h1>
+
+      <section class="barcode-box" aria-label="Карта и штрих-код">
+        <p class="lead">На странице показана карта с небольшим штрих-кодом. Для кассы нажмите кнопку ниже.</p>
+        <div data-fullscreen-target>
+          <img class="small-card-image" width="613" height="613" fetchpriority="high" decoding="async" src="../pic/karta-fix-price.webp" alt="Карта лояльности Fix Price со встроенным штрих-кодом">
+        </div>
+        <button class="button" type="button" data-fullscreen-button>Показать штрих-код на весь экран</button>
+      </section>
+
+      <section class="info-box">
+        <h2>Как использовать карту</h2>
+        <ul>
+          <li>Откройте страницу карты в магазине.</li>
+          <li>Включите полноэкранный режим кнопкой под картой.</li>
+          <li>Покажите увеличенный штрих-код кассиру.</li>
+        </ul>
+      </section>
+
+      <section class="faq-box">
+        <h2>FAQ</h2>
+        <article class="faq-item">
+          <h3>Как получить карту?</h3>
+          <p>Карта оформляется в приложении или на кассе по номеру телефона.</p>
+        </article>
+        <article class="faq-item">
+          <h3>Как восстановить карту?</h3>
+          <p>Повторно войдите в аккаунт — карта восстановится автоматически.</p>
+        </article>
+      </section>
+    </main>
+    <script src="../js/main.js" defer></script>
+  </body>
+</html>
