@@ -1,21 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
   <url>
-    <loc>https://devsite-твой-проект.netlify.app/</loc>
+    <loc>https://xn----7sbavphe5ahhetd7ezf.xn--p1ai/</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
+
   <url>
-    <loc>https://devsite-твой-проект.netlify.app/cards/pyaterochka.html</loc>
+    <loc>https://xn----7sbavphe5ahhetd7ezf.xn--p1ai/cards/pyaterochka.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
+
   <url>
-    <loc>https://devsite-твой-проект.netlify.app/cards/magnit.html</loc>
+    <loc>https://xn----7sbavphe5ahhetd7ezf.xn--p1ai/cards/perekrestok.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
+
   <url>
-    <loc>https://devsite-твой-проект.netlify.app/cards/fix-price.html</loc>
+    <loc>https://xn----7sbavphe5ahhetd7ezf.xn--p1ai/cards/fix-price.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
-  <url>
-    <loc>https://devsite-твой-проект.netlify.app/cards/perekrestok.html</loc>
+
+    <url>
+    <loc>https://xn----7sbavphe5ahhetd7ezf.xn--p1ai/cards/magnit.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
-  <url>
-    <loc>https://devsite-твой-проект.netlify.app/cards/lenta.html</loc>
+
+    <url>
+    <loc>https://xn----7sbavphe5ahhetd7ezf.xn--p1ai/cards/lenta.html</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>weekly</changefreq>
   </url>
+
 </urlset>

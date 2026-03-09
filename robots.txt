@@ -1,3 +1,20 @@
+# robots.txt для xn----7sbavphe5ahhetd7ezf.xn--p1ai
+
 User-agent: *
-Allow: /
-Sitemap: https://devsite-твой-проект.netlify.app/sitemap.xml
+# Запрещаем доступ к приватным папкам (если есть)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /node_modules/
+Disallow: /build/
+
+# Разрешаем доступ к CSS, JS и изображениям
+Allow: /css/
+Allow: /js/
+Allow: /pic/
+
+# Разрешаем индексацию страниц с картами
+Allow: /cards/
+
+# Sitemap
+Sitemap: https://xn----7sbavphe5ahhetd7ezf.xn--p1ai/sitemap.xml
