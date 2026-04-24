@@ -1,35 +1,213 @@
-.h1 {
-    margin: auto;
-    margin-top: 10%;
-    text-align: center;
-
-}
-.h2 {
-    margin: 5% auto 5%;
-    text-align: center;
-}
-.img1 {
-    margin: auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
-    
-
-}
-.footer {
-    background-color: #DE2D1B;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    width: 99%;
-    color: #fafaff;
+:root {
+  --bg: #f3f5fb;
+  --surface: #ffffff;
+  --text: #111827;
+  --muted: #4b5563;
+  --primary: #1d4ed8;
+  --primary-press: #1e40af;
+  --border: #e5e7eb;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(2, 6, 23, 0.08);
 }
 
+* {
+  box-sizing: border-box;
+}
 
-/* @media (max-width: 320px) {
-    .h1 {
-        size: 200px;
-    }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
 
+.container {
+  width: min(100%, 920px);
+  margin: 0 auto;
+  padding: 16px;
+}
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+.header {
+  margin-bottom: 14px;
+}
+
+.lead {
+  color: var(--muted);
+  margin-top: 8px;
+  line-height: 1.45;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.store-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  box-shadow: var(--shadow);
+}
+
+.store-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.logo-pyaterochka { background: #ef4444; }
+.logo-magnit { background: #b91c1c; }
+.logo-fix { background: #7c3aed; }
+.logo-perekrestok { background: #16a34a; }
+.logo-lenta { background: #0369a1; }
+
+.store-card h2 {
+  font-size: 1.15rem;
+  margin-bottom: 8px;
+}
+
+.store-card p {
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.button,
+.open-card {
+  appearance: none;
+  border: 0;
+  border-radius: 10px;
+  min-height: 50px;
+  padding: 12px 14px;
+  width: 100%;
+  background: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button:hover,
+.button:active,
+.open-card:hover,
+.open-card:active {
+  background: var(--primary-press);
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.back-link,
+.all-cards-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.barcode-box,
+.info-box,
+.faq-box {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px;
+  box-shadow: var(--shadow);
+  margin-bottom: 12px;
+}
+
+.small-card-image {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 8px auto 12px;
+  border-radius: 10px;
+}
+
+.info-box ul {
+  margin: 8px 0 0;
+  padding-left: 20px;
+  line-height: 1.45;
+}
+
+.faq-item + .faq-item {
+  margin-top: 10px;
+}
+
+.faq-item p {
+  margin-top: 6px;
+  color: var(--muted);
+}
+
+.fullscreen-card {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.fullscreen-card .small-card-image {
+  width: 100%;
+  max-width: none;
+  max-height: none;
+  transform: scale(2.4);
+  transform-origin: center 78%;
+  border-radius: 0;
+  margin: 0;
+}
+
+.fullscreen-fallback {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0b1220;
+    --surface: #111827;
+    --text: #f9fafb;
+    --muted: #cbd5e1;
+    --primary: #3b82f6;
+    --primary-press: #2563eb;
+    --border: #1f2937;
+    --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  }
+
+  .fullscreen-card {
+    background: #000;
+  }
+}
+
+@media (min-width: 720px) {
+  .container {
+    padding: 24px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
